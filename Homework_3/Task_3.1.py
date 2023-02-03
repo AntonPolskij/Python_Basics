@@ -14,10 +14,8 @@ list = [10, 5, 7, 3, 3, 0, 5, 7, 2, 8]
 x = int(input('Введите число: '))
 count = 0
 
-if not x in list:
-    print(-1)
-else:
-    for i in list:
-        if x == i:
-            count += 1
-    print(count)
+for i in list:
+    if x == i:
+        count += 1
+
+print(-1 if not x in list else count)
